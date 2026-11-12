@@ -1,0 +1,78 @@
+export const tools = [
+  {
+    id: 'qr-generator',
+    path: '/tools/qr-generator',
+    name: 'QR Generator',
+    description: 'Turn any URL or text into a downloadable QR code.',
+    category: 'Create',
+    accent: '#ff5c35',
+  },
+  {
+    id: 'youtube-to-text',
+    path: '/tools/youtube-to-text',
+    name: 'YouTube → Text',
+    description: 'Pull captions from a YouTube video into plain text.',
+    category: 'Media',
+    accent: '#e11d48',
+  },
+  {
+    id: 'file-converter',
+    path: '/tools/file-converter',
+    name: 'File Converter',
+    description: 'Convert documents, images, and video between many formats.',
+    category: 'Convert',
+    accent: '#0f766e',
+  },
+  {
+    id: 'file-compressor',
+    path: '/tools/file-compressor',
+    name: 'File Compressor',
+    description: 'Compress images, PDFs, docs, videos, or zip any files.',
+    category: 'Convert',
+    accent: '#db2777',
+  },
+  {
+    id: 'background-remover',
+    path: '/tools/background-remover',
+    name: 'Background Remover',
+    description: 'Upload a photo and remove the background in your browser.',
+    category: 'Media',
+    accent: '#7c2d12',
+  },
+  {
+    id: 'password-generator',
+    path: '/tools/password-generator',
+    name: 'Password Generator',
+    description: 'Create strong, copy-ready passwords in one click.',
+    category: 'Security',
+    accent: '#2563eb',
+  },
+  {
+    id: 'json-formatter',
+    path: '/tools/json-formatter',
+    name: 'JSON Formatter',
+    description: 'Pretty-print, minify, and validate JSON instantly.',
+    category: 'Dev',
+    accent: '#ca8a04',
+  },
+  {
+    id: 'markdown-preview',
+    path: '/tools/markdown-preview',
+    name: 'Markdown Preview',
+    description: 'Write Markdown and see a live preview side by side.',
+    category: 'Write',
+    accent: '#0e7490',
+  },
+  {
+    id: 'word-counter',
+    path: '/tools/word-counter',
+    name: 'Word Counter',
+    description: 'Count words, characters, sentences, and reading time.',
+    category: 'Write',
+    accent: '#0891b2',
+  },
+];
+
+export function getToolByPath(pathname) {
+  return tools.find((tool) => tool.path === pathname);
+}
