@@ -16,22 +16,20 @@ export default function MarkdownPreview() {
 
   return (
     <ToolShell tool={tool}>
-      <div className="panel-split">
-        <div className="field">
+      <div className="markdown-workspace">
+        <div className="field markdown-pane">
           <label htmlFor="md-input">Markdown</label>
           <textarea
             id="md-input"
-            className="textarea"
-            style={{ minHeight: 360 }}
+            className="textarea markdown-editor"
             value={markdown}
             onChange={(e) => setMarkdown(e.target.value)}
           />
         </div>
-        <div className="field">
+        <div className="field markdown-pane">
           <label>Preview</label>
           <div
-            className="preview-box markdown-body"
-            style={{ minHeight: 360 }}
+            className="preview-box markdown-body markdown-preview"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
